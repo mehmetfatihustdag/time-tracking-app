@@ -1,0 +1,40 @@
+spring:
+
+  datasource:
+    url: jdbc:h2:mem:employees
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+  flyway:
+    locations: classpath:/db/migration
+    url : jdbc:h2:mem:employees
+    password: sa
+    user: sa
+
+server:
+  port: 8083
+
+springdoc:
+  api-docs.path: /api-docs
+  packagesToScan: com.foodtech.timetracking.resources
+  swagger-ui.disable-swagger-default-url: true
+
+
+
+
+
+
+
