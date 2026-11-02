@@ -1,5 +1,5 @@
 # TimeTracking App
-FoodTech time tracking app assignment
+ Time tracking app assignment
 
 
 ### Tech
